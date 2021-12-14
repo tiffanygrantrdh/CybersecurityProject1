@@ -107,9 +107,9 @@ SSH into the control node and follow the steps below:
 - Copy the metricbeat-playbook.yml file to /etc/ansible/roles
 - Update the hosts file to include the webservers and elk machine
 o /etc/ansible/hosts should have the following:
-  o [elk]
+o [elk]
     * 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
-  o [webservers]
+o [webservers]
     * 10.0.0.5 ansible_python_interpreter=/usr/bin/python3
     * 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
     * 10.0.0.10 ansible_python_interpreter=/usr/bin/python3
