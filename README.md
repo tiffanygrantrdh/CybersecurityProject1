@@ -3,7 +3,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![/Downloads/Project1drawio.drawio]
+! [/Downloads/Project1drawio.drawio]
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -82,7 +82,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-/Users/Default/Pictures/sudo_docker_ps.PNG
+! [/Users/Default/Pictures/sudo_docker_ps.PNG]
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -116,7 +116,7 @@ SSH into the control node and follow the steps below:
 
 - Run the playbooks and SSH into Web4 (elk machine), then run docker ps to check that the installation worked.
 
-![/Users/Default/Pictures/sudo_docker_ps]
+
 
 - _Which file is the playbook? filebeat-playbook.yml and metricbeat-playbook.yml  
 - Where do you copy it?_ /etc/ansible/roles 
