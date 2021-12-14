@@ -118,7 +118,7 @@ SSH into the control node and follow the steps below:
 
 
 
-- _Which file is the playbook? filebeat-playbook.yml and metricbeat-playbook.yml  
+- _Which file is the playbook? install-elk.yml, filebeat-playbook.yml, and metricbeat-playbook.yml  
 - Where do you copy it?_ /etc/ansible/roles 
 - _Which file do you update to make Ansible run the playbook on a specific machine? Ansible hosts file at /etc/ansible/hosts to configure specific machines or groups. 
 -How do I specify which machine to install the ELK server on versus which to install Filebeat on?_The playbook will specify which machine to install to based on the hosts file.
