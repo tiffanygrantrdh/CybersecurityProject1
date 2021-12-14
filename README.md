@@ -3,7 +3,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-/Downloads/Project1drawio.drawio
+![/Downloads/Project1drawio.drawio]
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -106,17 +106,17 @@ SSH into the control node and follow the steps below:
 - Copy the filebeat-playbook.yml file to /etc/ansible/roles
 - Copy the metricbeat-playbook.yml file to /etc/ansible/roles
 - Update the hosts file to include the webservers and elk machine
-o /etc/ansible/hosts should have the following:
-o [elk]
-* 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
-o [webservers]
-* 10.0.0.5 ansible_python_interpreter=/usr/bin/python3
-* 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
-* 10.0.0.10 ansible_python_interpreter=/usr/bin/python3
+ /etc/ansible/hosts should have the following:
+  - [elk]
+   - 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
+  - [webservers]
+   - 10.0.0.5 ansible_python_interpreter=/usr/bin/python3
+   - 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
+   - 10.0.0.10 ansible_python_interpreter=/usr/bin/python3
 
 - Run the playbooks and SSH into Web4 (elk machine), then run docker ps to check that the installation worked.
 
-
+![/Users/Default/Pictures/sudo_docker_ps]
 
 - _Which file is the playbook? filebeat-playbook.yml and metricbeat-playbook.yml  
 - Where do you copy it?_ /etc/ansible/roles 
