@@ -10,7 +10,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml file may be used to install only certain pieces of it, such as Filebeat.
 
- -Install-elk.yml
+ - Install-elk.yml
  
 
 This document contains the following details:
@@ -27,11 +27,11 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly reliable and available, in addition to restricting unauthorized access to the network.
-- _What aspect of security do load balancers protect? It adds resiliency by shifting traffic from one server to another, which defends against DDoS attacks. It also helps prevent overloading of servers. What is the advantage of a jump box?_ Jump box ensures security. They are highly secure computers that admin connect to before launching any administrative tasks.
+- What aspect of security do load balancers protect? It adds resiliency by shifting traffic from one server to another, which defends against DDoS attacks. It also helps prevent overloading of servers. What is the advantage of a jump box?_ Jump box ensures security. They are highly secure computers that admin connect to before launching any administrative tasks.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system logs.
-- _What does Filebeat watch for?_ It monitors the log files and locations that you specify and collects the log events. It watches for any changes in the file system.
-- _What does Metricbeat record?_ It records metrics and stats that it collects and forwards them to which ever output you specify.
+- What does Filebeat watch for?_ It monitors the log files and locations that you specify and collects the log events. It watches for any changes in the file system.
+- What does Metricbeat record?_ It records metrics and stats that it collects and forwards them to which ever output you specify.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -74,7 +74,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- What is the main advantage of automating configuration with Ansible?_ Automation with Ansible simplifies complex IT tasks. It allowed us to deploy multiple VMs using the same playbooks.
+- What is the main advantage of automating configuration with Ansible? Automation with Ansible simplifies complex IT tasks. It allowed us to deploy multiple VMs using the same playbooks.
 
 The playbook implements the following tasks:
 - Install docker.io – Docker engine is used to run containers on all   network machines.
@@ -123,11 +123,11 @@ SSH into the control node and follow the steps below:
 
 
 
-- _Which file is the playbook? install-elk.yml, filebeat-playbook.yml, and metricbeat-playbook.yml  
-- Where do you copy it?_ /etc/ansible and /etc/ansible/roles
-- _Which file do you update to make Ansible run the playbook on a specific machine? Ansible hosts file at /etc/ansible/hosts to configure specific machines or groups. 
--How do I specify which machine to install the ELK server on versus which to install Filebeat on?_The playbook will specify which machine to install to based on the hosts file.
-- _Which URL +do you navigate to in order to check that the ELK server is running? http://13.64.67.132:5601/app/kibana
+- Which file is the playbook? install-elk.yml, filebeat-playbook.yml, and metricbeat-playbook.yml  
+- Where do you copy it? /etc/ansible and /etc/ansible/roles
+- Which file do you update to make Ansible run the playbook on a specific machine? Ansible hosts file at /etc/ansible/hosts to configure specific machines or groups. 
+- How do I specify which machine to install the ELK server on versus which to install Filebeat on?_The playbook will specify which machine to install to based on the hosts file.
+- Which URL +do you navigate to in order to check that the ELK server is running? http://13.64.67.132:5601/app/kibana
 
 The specific commands the user will need to run to download the playbook, update the files, etc._
 
