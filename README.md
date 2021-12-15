@@ -38,8 +38,8 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name      | Function | IP Address         | Operating System |
 |-----------|----------|--------------------|------------------|
-| JumpBox   | Gateway  | 10.0.0.4 Private
-|           |            20.121.14.98 Public| Linux            |
+| JumpBox   | Gateway  | 10.0.0.4 Private   | Linux            |
+|           |          | 20.121.14.98 Public|                  |
 | Web1      |   VM     | 10.0.0.5           | Linux            |
 | Web2      |  VM      | 10.0.0.6           | Linux            |
 | Web3      |  VM      | 10.0.0.10          | Linux            |
@@ -119,22 +119,22 @@ SSH into the control node and follow the steps below:
 
 
 - _Which file is the playbook? install-elk.yml, filebeat-playbook.yml, and metricbeat-playbook.yml  
-- Where do you copy it?_ /etc/ansible/roles 
+- Where do you copy it?_ /etc/ansible and /etc/ansible/roles
 - _Which file do you update to make Ansible run the playbook on a specific machine? Ansible hosts file at /etc/ansible/hosts to configure specific machines or groups. 
 -How do I specify which machine to install the ELK server on versus which to install Filebeat on?_The playbook will specify which machine to install to based on the hosts file.
 - _Which URL +do you navigate to in order to check that the ELK server is running? http://13.64.67.132:5601/app/kibana
 
 The specific commands the user will need to run to download the playbook, update the files, etc._
 
--SSH into JumpBoxProvisioner: sudo AdminGrant@20.121.14.98
--sudo docker start kind_mclean
--sudo docker attach kind_mclean
+- SSH into JumpBoxProvisioner: sudo AdminGrant@20.121.14.98
+- sudo docker start kind_mclean
+- sudo docker attach kind_mclean
 
--cd /etc/ansible/
--Create or update playbook: nano install-elk.yml
--Run: ansible-playbook install-elk.yml
+- cd /etc/ansible/
+- Create or update playbook: nano install-elk.yml
+- Run: ansible-playbook install-elk.yml
 
--cd /etc/ansible/roles
--Create or update playbooks: nano filebeat-playbook.yml   nano metricbeat-playbook.yml
--Run: ansible-playbook filebeat-playbook.yml
--Run: ansible-playbook metricbeat-playbook.yml
+- cd /etc/ansible/roles
+- Create or update playbooks: nano filebeat-playbook.yml   nano metricbeat-playbook.yml
+- Run: ansible-playbook filebeat-playbook.yml
+- Run: ansible-playbook metricbeat-playbook.yml
