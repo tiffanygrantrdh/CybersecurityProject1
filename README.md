@@ -136,10 +136,10 @@ The specific commands the user will need to run to download the playbook, update
 - sudo docker attach kind_mclean
 
 - cd /etc/ansible/
-- Create or update playbook: nano install-elk.yml
+- To update playbook: nano install-elk.yml
 - Run: ansible-playbook install-elk.yml
 
 - cd /etc/ansible/roles
-- Create or update playbooks: nano filebeat-playbook.yml   nano metricbeat-playbook.yml
+- To update playbooks: nano filebeat-playbook.yml or  nano metricbeat-playbook.yml
 - Run: ansible-playbook filebeat-playbook.yml
 - Run: ansible-playbook metricbeat-playbook.yml
