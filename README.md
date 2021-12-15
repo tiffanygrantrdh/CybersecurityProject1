@@ -36,15 +36,15 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 
 
-| Name     | Function | IP Address         | Operating System |
-|----------|----------|--------------------|------------------|
-| JumpBox  | Gateway  | 10.0.0.4 Private
- Provisioner             20.121.14.98 Public| Linux            |
-| Web1      |  VM      | 10.0.0.5           | Linux            |
+| Name      | Function | IP Address         | Operating System |
+|-----------|----------|--------------------|------------------|
+| JumpBox   | Gateway  | 10.0.0.4 Private
+|           |            20.121.14.98 Public| Linux            |
+| Web1      |   VM     | 10.0.0.5           | Linux            |
 | Web2      |  VM      | 10.0.0.6           | Linux            |
 | Web3      |  VM      | 10.0.0.10          | Linux            |
 | Web4 (Elk)|Monitoring| 10.1.0.4 Private   | Linux            |
-                        13.64.67.132 Public
+|           |          | 13.64.67.132 Public|                  |
 
 
 ### Access Policies
@@ -126,15 +126,15 @@ SSH into the control node and follow the steps below:
 
 The specific commands the user will need to run to download the playbook, update the files, etc._
 
-SSH into JumpBoxProvisioner: sudo AdminGrant@20.121.14.98
-sudo docker start kind_mclean
-sudo docker attach kind_mclean
+-SSH into JumpBoxProvisioner: sudo AdminGrant@20.121.14.98
+-sudo docker start kind_mclean
+-sudo docker attach kind_mclean
 
-cd /etc/ansible/
-Create or update playbook: nano install-elk.yml
-Run: ansible-playbook install-elk.yml
+-cd /etc/ansible/
+-Create or update playbook: nano install-elk.yml
+-Run: ansible-playbook install-elk.yml
 
-cd /etc/ansible/roles
-Create or update playbooks: nano filebeat-playbook.yml   nano metricbeat-playbook.yml
-Run: ansible-playbook filebeat-playbook.yml
-Run: ansible-playbook metricbeat-playbook.yml
+-cd /etc/ansible/roles
+-Create or update playbooks: nano filebeat-playbook.yml   nano metricbeat-playbook.yml
+-Run: ansible-playbook filebeat-playbook.yml
+-Run: ansible-playbook metricbeat-playbook.yml
